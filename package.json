@@ -1,0 +1,14 @@
+{
+  "name": "rest-countries-node",
+  "version": "1.0.0",
+  "description": "A Node.js wrapper library around the API provided by http://restcountries.eu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando González Aguilera",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}
