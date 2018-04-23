@@ -9,6 +9,7 @@
   "author": "Fernando González Aguilera",
   "license": "MIT",
   "dependencies": {
+    "lodash": "^4.17.5",
     "request": "^2.85.0"
   },
   "devDependencies": {

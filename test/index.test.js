@@ -16,17 +16,17 @@ describe('getAll()', () => {
   });
 
   it('returns an object', () => {
-    return rc.getAll()
+    rc.getAll()
       .then(response => {
-        expect(typeof response).to.equal('object');
+        expect(response).to.be.an('array');
       });
   });
 
   it('returns three elements of type object inside the response', () => {
-    return rc.getAll()
+    rc.getAll()
       .then(response => {
         for (let value of response) {
-          expect(typeof value).to.equal('object');
+          expect(value).to.be.an('object');
         };
 
         expect(response.length).to.equal(3);
@@ -45,17 +45,63 @@ describe('findByName()', () => {
   });
 
   it('returns an object', () => {
-    return rc.findByName('france')
+    rc.findByName('france')
       .then(response => {
-        expect(typeof response).to.equal('object');
+        expect(response).to.be.an('array');
       });
   });
 
   it('returns one element of type object inside the response', () => {
-    return rc.findByName('france')
+    rc.findByName('france')
       .then(response => {
-        expect(typeof response[0]).to.equal('object');
+        expect(response[0]).to.be.an('object');
         expect(response.length).to.equal(1);
       });
   });
+});
+
+describe('getAllGroupedBySubRegion()', () => {
+
+  let getAllResponse = require('./mock/get-all-response');
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  describe('knowing beforehand that the mocked response has three different subregions', () => {
+    it('returns an object', () => {
+      rc.getAllGroupedBySubRegion()
+        .then(response => {
+          expect(response).to.be.an('object');
+      });
+    });
+
+    it('the object contains three keys repesenting the subregions', () => {
+      rc.getAllGroupedBySubRegion()
+        .then(response => {
+          let responseKeys = Object.keys(response);
+          expect(responseKeys.length).to.equal(3);
+          expect(responseKeys).to.deep.equal(['southern-europe', 'western-europe', 'south-america']);
+      });
+    });
+
+    it('each subregion key points to an array that contains objects representing countries', () => {
+      rc.getAllGroupedBySubRegion()
+        .then(response => {
+          let responseKeys = Object.keys(response);
+
+          responseKeys.forEach(key => {
+            expect(response[key]).to.be.an('array');
+
+            response[key].forEach(countryObject => {
+              expect(countryObject).to.be.an('object');
+            });
+
+          });
+
+      });
+    });
+  });
+
 });
