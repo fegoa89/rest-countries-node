@@ -60,6 +60,68 @@ describe('findByName()', () => {
   });
 });
 
+describe('findByFullName()', () => {
+
+  let findByFullNameResponse = require('./mock/find-by-name-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/name/france?fullText=true')
+      .reply(200, findByFullNameResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByFullName('france')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+
+  it('returns one element of type object inside the response', () => {
+    rc.findByFullName('france')
+      .then(response => {
+        expect(response[0]).to.be.an('object');
+        expect(response.length).to.equal(1);
+      });
+  });
+});
+
+describe('findByIsoCountryCode()', () => {
+
+  let findByIsoCountryCodeResponse = require('./mock/find-by-iso-country-code-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/alpha/bg')
+      .reply(200, findByIsoCountryCodeResponse);
+  });
+
+  it('returns an object', () => {
+    rc.findByIsoCountryCode('bg')
+      .then(response => {
+        expect(response).to.be.an('object');
+      });
+  });
+});
+
+describe('findByIsoCountryCodes()', () => {
+
+  let findByIsoCountryCodesResponse = require('./mock/find-by-iso-country-codes-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/alpha?codes=pl;gb;it')
+      .reply(200, findByIsoCountryCodesResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByIsoCountryCodes('pl;gb;it')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+});
+
 describe('getAllGroupedBySubRegion()', () => {
 
   let getAllResponse = require('./mock/get-all-response');
