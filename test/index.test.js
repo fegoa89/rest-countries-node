@@ -122,6 +122,132 @@ describe('findByIsoCountryCodes()', () => {
   });
 });
 
+describe('findByCurrency()', () => {
+
+  let findByIsoCurrencyResponse = require('./mock/find-by-currency-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/currency/pln')
+      .reply(200, findByIsoCurrencyResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByCurrency('pln')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+
+  it('returns one element of type object inside the response', () => {
+    rc.findByCurrency('pln')
+      .then(response => {
+        expect(response[0]).to.be.an('object');
+        expect(response.length).to.equal(1);
+      });
+  });
+});
+
+describe('findByLanguageCode()', () => {
+
+  let findByLanguageCodeResponse = require('./mock/find-by-language-code-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/lang/it')
+      .reply(200, findByLanguageCodeResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByLanguageCode('it')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+
+  it('returns one element of type object inside the response', () => {
+    rc.findByLanguageCode('it')
+      .then(response => {
+        expect(response[0]).to.be.an('object');
+      });
+  });
+});
+
+describe('findByCapitalCity()', () => {
+
+  let findByCapitalCityResponse = require('./mock/find-by-capital-city-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/capital/tallinn')
+      .reply(200, findByCapitalCityResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByCapitalCity('tallinn')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+
+  it('returns one element of type object inside the response', () => {
+    rc.findByCapitalCity('tallinn')
+      .then(response => {
+        expect(response[0]).to.be.an('object');
+      });
+  });
+});
+
+describe('findByCallingCode()', () => {
+
+  let findByCapitalCityResponse = require('./mock/find-by-capital-city-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/callingcode/377')
+      .reply(200, findByCapitalCityResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByCallingCode('377')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+
+  it('returns one element of type object inside the response', () => {
+    rc.findByCallingCode('377')
+      .then(response => {
+        expect(response[0]).to.be.an('object');
+      });
+  });
+});
+
+describe('findByRegion()', () => {
+
+  let findByRegionResponse = require('./mock/find-by-capital-city-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/region/oceania')
+      .reply(200, findByRegionResponse);
+  });
+
+  it('returns an array', () => {
+    rc.findByRegion('oceania')
+      .then(response => {
+        expect(response).to.be.an('array');
+      });
+  });
+
+  it('returns one element of type object inside the response', () => {
+    rc.findByRegion('oceania')
+      .then(response => {
+        expect(response[0]).to.be.an('object');
+      });
+  });
+});
+
 describe('getAllGroupedBySubRegion()', () => {
 
   let getAllResponse = require('./mock/get-all-response');
