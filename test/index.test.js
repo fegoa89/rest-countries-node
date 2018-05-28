@@ -291,5 +291,76 @@ describe('getAllGroupedBySubRegion()', () => {
       });
     });
   });
+});
 
+describe('findCountryFlagByCountryName()', () => {
+
+  let getAllResponse = require('./mock/get-all-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  describe('looking for a valid country name', () => {
+    it('returns an object', () => {
+      rc.findCountryFlagByCountryName('Spain')
+        .then(response => {
+          expect(response).to.be.an('object');
+      });
+    });
+
+    it('the object contains two keys - countryName and flag', () => {
+      rc.findCountryFlagByCountryName('Spain')
+        .then(response => {
+          let responseKeys = Object.keys(response);
+          expect(responseKeys).to.deep.equal(['countryName', 'flag']);
+      });
+    });
+  });
+
+  describe('looking for a not existing country name', () => {
+    it('returns an empty object', () => {
+      rc.findCountryFlagByCountryName('Hola')
+        .then(response => {
+          expect(response).to.be.an('array').that.is.empty;
+      });
+    });
+  });
+});
+
+describe('findCountryByForeignName()', () => {
+  let getAllResponse = require('./mock/get-all-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  describe('looking for a valid country name', () => {
+    it('returns an object', () => {
+      rc.findCountryByForeignName('スペイン')
+        .then(response => {
+          expect(response).to.be.an('object');
+      });
+    });
+
+    it('the object returned is "Spain"', () => {
+      rc.findCountryByForeignName('スペイン')
+        .then(response => {
+          expect(response.name).to.equal('Spain');
+      });
+    })
+  });
+
+  describe('looking for a not existing country name', () => {
+    it('returns an empty object', () => {
+      rc.findCountryByForeignName('1234')
+        .then(response => {
+          expect(response).to.be.an('array').that.is.empty;
+      });
+    });
+  });
 });
