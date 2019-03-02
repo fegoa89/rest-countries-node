@@ -9,12 +9,12 @@
   "author": "Fernando González Aguilera",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.11",
     "request": "^2.85.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.1.0",
+    "mocha": "^5.2.0",
     "nock": "^9.2.5"
   }
 }
