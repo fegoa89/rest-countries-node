@@ -1,3 +1,4 @@
+[![Build Status](https://semaphoreci.com/api/v1/fegoa89/rest-countries-node/branches/master/badge.svg)](https://semaphoreci.com/fegoa89/rest-countries-node)
 # Rest Country Node
 A Node.js wrapper library around the API provided by https://restcountries.eu .
 
