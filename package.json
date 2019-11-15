@@ -1,6 +1,6 @@
 {
   "name": "rest-countries-node",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Node.js wrapper library around the API provided by http://restcountries.eu",
   "main": "index.js",
   "scripts": {
