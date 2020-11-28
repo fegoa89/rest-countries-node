@@ -364,3 +364,28 @@ describe('findCountryByForeignName()', () => {
     });
   });
 });
+
+describe('getNearestCountryToPosition()', () => {
+
+  let getAllResponse = require('./mock/get-all-response');
+
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  it('returns an object', () => {
+    rc.getNearestCountryToPosition({lat: 50.0, lon: 9.0})
+      .then(response => {
+        expect(response).to.be.an('object');
+      })
+  });
+
+  it('returns Germany as expected result for the given lat/lon', () => {
+    rc.getNearestCountryToPosition({lat: 50.0, lon: 9.0})
+      .then(response => {
+        expect(response.name).to.equal('Germany')
+      })
+  });
+});

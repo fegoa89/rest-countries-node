@@ -348,3 +348,25 @@ restCountries.findCountryByForeignName('スペイン')
     */
   });
 ```
+
+### getNearestCountryToPosition()
+
+Returns the nearest country to the input lat/lon:
+
+```javascript
+restCountries.getNearestCountryToPosition({lat: 50.0, lon: 9.0})
+  .then(response => {
+    /*
+      {
+        "alpha2Code": "DE",
+        "alpha3Code": "DEU",
+        "altSpellings": [
+          "DE",
+          "Federal Republic of Germany",
+          "Bundesrepublik Deutschland"
+        ],
+        ...
+      }
+    */
+  });
+```
