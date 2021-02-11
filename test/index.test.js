@@ -434,3 +434,55 @@ describe('getNearestCountryToPosition()', () => {
       })
   });
 });
+
+describe('getAllGroupedByTimezone()', () => {
+
+  let getAllResponse = require('./mock/get-all-response');
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  describe('knowing beforehand that the mocked response has three different timezones', () => {
+    it('returns an object', () => {
+      rc.getAllGroupedByTimezone()
+        .then(response => {
+          expect(response).to.be.an('object');
+      });
+    });
+    it('the object contains three keys repesenting the timezones', () => {
+      rc.getAllGroupedByTimezone()
+        .then(response => {
+          let responseKeys = Object.keys(response);
+          expect(responseKeys.length).to.equal(3);
+          expect(responseKeys).to.deep.equal(['UTC', 'UTC+01:00', 'UTC-05:00']);
+      });
+    });
+
+    it('each timezone key points to an array that contains objects representing countries', () => {
+      rc.getAllGroupedByTimezone()
+        .then(response => {
+          let responseKeys = Object.keys(response);
+
+          responseKeys.forEach(key => {
+            expect(response[key]).to.be.an('array');
+
+            response[key].forEach(countryObject => {
+              expect(countryObject).to.be.an('object');
+            });
+
+          });
+
+      });
+    });
+    it('timezone UTC+01:00 has two countries', () => {
+      rc.getAllGroupedByTimezone()
+        .then(response => {
+          expect(response["UTC+01:00"]).to.be.an('array');
+          expect(response["UTC+01:00"].length).to.equal(2);
+
+      });
+    });
+  });
+});

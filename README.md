@@ -418,3 +418,63 @@ restCountries.getNearestCountryToPosition({lat: 50.0, lon: 9.0})
     */
   });
 ```
+
+### getAllGroupedByTimezone
+
+Returns a list of countries grouped by timezone:
+
+```javascript
+restCountries.getAllGroupedByRegion()
+  .then(response => {
+    /*
+      {
+        "UTC": [
+          {
+            "alpha2Code": "ES",
+            "alpha3Code": "ESP",
+            "altSpellings": [
+              "ES",
+              "Kingdom of Spain",
+              "Reino de España"
+            ],
+            ...
+          }
+        ],
+        "UTC+01:00": [
+          {
+            "alpha2Code": "ES",
+            "alpha3Code": "ESP",
+            "altSpellings": [
+              "ES",
+              "Kingdom of Spain",
+              "Reino de España"
+            ],
+            ...
+          },
+          {
+            "alpha2Code": "DE",
+            "alpha3Code": "DEU",
+            "altSpellings": [
+              "DE",
+              "Federal Republic of Germany",
+              "Bundesrepublik Deutschland"
+            ],
+            ...
+          }
+        ],
+        "UTC-05:00": [
+          {
+            "alpha2Code": "CO",
+            "alpha3Code": "COL",
+            "altSpellings": [
+              "CO",
+              "Republic of Colombia",
+              "República de Colombia"
+            ],
+            ...
+          }
+        ]
+      }
+    */
+  });
+```
