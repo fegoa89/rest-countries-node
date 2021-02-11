@@ -3,6 +3,24 @@
 # Rest Country Node
 A Node.js wrapper library around the API provided by https://restcountries.eu .
 
+## Available methods
+[`getAll()`](#getAll())
+[`findByName()`](#findByName())
+[`findByFullName()`](#findByFullName())
+[`findByIsoCountryCode()`](#findByIsoCountryCode())
+[`findByIsoCountryCodes()`](#findByIsoCountryCodes())
+[`findByCurrency()`](#findByCurrency())
+[`findByLanguageCode()`](#findByLanguageCode())
+[`findByCapitalCity()`](#findByCapitalCity())
+[`findByCallingCode()`](#findByCallingCode())
+[`findByRegion()`](#findByRegion())
+[`getAllGroupedByRegion()`](#getAllGroupedByRegion())
+[`getAllGroupedBySubRegion()`](#getAllGroupedBySubRegion())
+[`findCountryFlagByCountryName()`](#findCountryFlagByCountryName())
+[`findCountryByForeignName()`](#findCountryByForeignName())
+[`getNearestCountryToPosition()`](#getNearestCountryToPosition())
+[`getAllGroupedByTimezone()`](#getAllGroupedByTimezone())
+
 
 ## Usage
 
