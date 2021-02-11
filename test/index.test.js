@@ -293,6 +293,51 @@ describe('getAllGroupedBySubRegion()', () => {
   });
 });
 
+describe('getAllGroupedByRegion()', () => {
+
+  let getAllResponse = require('./mock/get-all-response');
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  describe('knowing beforehand that the mocked response has two different subregions', () => {
+    it('returns an object', () => {
+      rc.getAllGroupedByRegion()
+        .then(response => {
+          expect(response).to.be.an('object');
+      });
+    });
+
+    it('the object contains two keys repesenting the subregions', () => {
+      rc.getAllGroupedByRegion()
+        .then(response => {
+          let responseKeys = Object.keys(response);
+          expect(responseKeys.length).to.equal(2);
+          expect(responseKeys).to.deep.equal(['europe', 'americas']);
+      });
+    });
+
+    it('each region key points to an array that contains objects representing countries', () => {
+      rc.getAllGroupedByRegion()
+        .then(response => {
+          let responseKeys = Object.keys(response);
+
+          responseKeys.forEach(key => {
+            expect(response[key]).to.be.an('array');
+
+            response[key].forEach(countryObject => {
+              expect(countryObject).to.be.an('object');
+            });
+
+          });
+
+      });
+    });
+  });
+});
+
 describe('findCountryFlagByCountryName()', () => {
 
   let getAllResponse = require('./mock/get-all-response');

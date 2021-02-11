@@ -311,6 +311,54 @@ restCountries.getAllGroupedBySubRegion()
   });
 ```
 
+### getAllGroupedBySubRegion()
+
+Returns a list of countries grouped by regions:
+
+```javascript
+restCountries.getAllGroupedByRegion()
+  .then(response => {
+    /*
+      {
+        "europe": [
+          {
+            "alpha2Code": "ES",
+            "alpha3Code": "ESP",
+            "altSpellings": [
+              "ES",
+              "Kingdom of Spain",
+              "Reino de España"
+            ],
+            ...
+          },
+          {
+            "alpha2Code": "DE",
+            "alpha3Code": "DEU",
+            "altSpellings": [
+              "DE",
+              "Federal Republic of Germany",
+              "Bundesrepublik Deutschland"
+            ],
+          }
+        ],
+        "americas": [
+          {
+            "alpha2Code": "CO",
+            "alpha3Code": "COL",
+            "altSpellings": [
+              "CO",
+              "Republic of Colombia",
+              "República de Colombia"
+            ],
+            ...
+          }
+        ]
+      }
+
+    */
+  });
+```
+
 ### findCountryFlagByCountryName()
 
 Returns the flag for a given country :
