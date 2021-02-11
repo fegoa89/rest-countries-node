@@ -4,22 +4,37 @@
 A Node.js wrapper library around the API provided by https://restcountries.eu .
 
 ## Available methods
-[`getAll()`](#getAll())
-[`findByName()`](#findByName())
-[`findByFullName()`](#findByFullName())
-[`findByIsoCountryCode()`](#findByIsoCountryCode())
-[`findByIsoCountryCodes()`](#findByIsoCountryCodes())
-[`findByCurrency()`](#findByCurrency())
-[`findByLanguageCode()`](#findByLanguageCode())
-[`findByCapitalCity()`](#findByCapitalCity())
-[`findByCallingCode()`](#findByCallingCode())
-[`findByRegion()`](#findByRegion())
-[`getAllGroupedByRegion()`](#getAllGroupedByRegion())
-[`getAllGroupedBySubRegion()`](#getAllGroupedBySubRegion())
-[`findCountryFlagByCountryName()`](#findCountryFlagByCountryName())
-[`findCountryByForeignName()`](#findCountryByForeignName())
-[`getNearestCountryToPosition()`](#getNearestCountryToPosition())
-[`getAllGroupedByTimezone()`](#getAllGroupedByTimezone())
+[`getAll()`](#getAll)
+
+[`findByName()`](#findByName)
+
+[`findByFullName()`](#findByFullName)
+
+[`findByIsoCountryCode()`](#findByIsoCountryCode)
+
+[`findByIsoCountryCodes()`](#findByIsoCountryCodes)
+
+[`findByCurrency()`](#findByCurrency)
+
+[`findByLanguageCode()`](#findByLanguageCode)
+
+[`findByCapitalCity()`](#findByCapitalCity)
+
+[`findByCallingCode()`](#findByCallingCode)
+
+[`findByRegion()`](#findByRegion)
+
+[`getAllGroupedByRegion()`](#getAllGroupedByRegion)
+
+[`getAllGroupedBySubRegion()`](#getAllGroupedBySubRegion)
+
+[`findCountryFlagByCountryName()`](#findCountryFlagByCountryName)
+
+[`findCountryByForeignName()`](#findCountryByForeignName)
+
+[`getNearestCountryToPosition()`](#getNearestCountryToPosition)
+
+[`getAllGroupedByTimezone()`](#getAllGroupedByTimezone)
 
 
 ## Usage
@@ -29,7 +44,7 @@ var RestCountries = require('rest-countries-node');
 restCountries = new RestCountries;
 ```
 
-### getAll()
+### getAll
 
 Returns all countries information:
 
@@ -40,7 +55,7 @@ restCountries.getAll()
   });
 ```
 
-### findByName()
+### findByName
 
 Search by country name. It can be the native name or partial name:
 
@@ -64,7 +79,7 @@ restCountries.findByName('france')
   });
 ```
 
-### findByFullName()
+### findByFullName
 
 Search by country full name:
 
@@ -88,7 +103,7 @@ restCountries.findByFullName('france')
   });
 ```
 
-### findByIsoCountryCode()
+### findByIsoCountryCode
 
 Search by ISO 3166-1 2-letter or 3-letter country code:
 
@@ -110,7 +125,7 @@ restCountries.findByIsoCountryCode('bg')
   });
 ```
 
-### findByIsoCountryCodes()
+### findByIsoCountryCodes
 
 Search by list of ISO 3166-1 2-letter or 3-letter country codes:
 
@@ -154,7 +169,7 @@ restCountries.findByIsoCountryCodes('pl;gb;it')
   });
 ```
 
-### findByCurrency()
+### findByCurrency
 
 Search by ISO 4217 currency code:
 
@@ -178,7 +193,7 @@ restCountries.findByCurrency('pln')
   });
 ```
 
-### findByLanguageCode()
+### findByLanguageCode
 
 Search by ISO 639-1 language code:
 
@@ -212,7 +227,7 @@ restCountries.findByLanguageCode('it')
   });
 ```
 
-### findByCapitalCity()
+### findByCapitalCity
 
 Search by capital city:
 
@@ -237,7 +252,7 @@ restCountries.findByCapitalCity('tallinn')
   });
 ```
 
-### findByCallingCode()
+### findByCallingCode
 
 Search by calling code:
 
@@ -261,7 +276,7 @@ restCountries.findByCallingCode('377')
   });
 ```
 
-### findByRegion()
+### findByRegion
 
 Search by region (Africa, Americas, Asia, Europe, Oceania) :
 
@@ -287,7 +302,7 @@ restCountries.findByRegion('oceania')
   });
 ```
 
-### getAllGroupedBySubRegion()
+### getAllGroupedBySubRegion
 
 Returns a list of countries grouped by subregions:
 
@@ -329,7 +344,7 @@ restCountries.getAllGroupedBySubRegion()
   });
 ```
 
-### getAllGroupedBySubRegion()
+### getAllGroupedBySubRegion
 
 Returns a list of countries grouped by regions:
 
@@ -377,7 +392,7 @@ restCountries.getAllGroupedByRegion()
   });
 ```
 
-### findCountryFlagByCountryName()
+### findCountryFlagByCountryName
 
 Returns the flag for a given country :
 
@@ -393,7 +408,7 @@ restCountries.findCountryFlagByCountryName('Spain')
   });
 ```
 
-### findCountryByForeignName()
+### findCountryByForeignName
 
 Returns the flag for a given country :
 
@@ -415,7 +430,7 @@ restCountries.findCountryByForeignName('スペイン')
   });
 ```
 
-### getNearestCountryToPosition()
+### getNearestCountryToPosition
 
 Returns the nearest country to the input lat/lon:
 
