@@ -36,6 +36,7 @@ A Node.js wrapper library around the API provided by https://restcountries.eu .
 
 [`getAllGroupedByTimezone()`](#getAllGroupedByTimezone)
 
+[`getCountriesByTimezone()`](#getCountriesByTimezone)
 
 ## Usage
 
@@ -495,6 +496,32 @@ restCountries.getAllGroupedByRegion()
             ...
           }
         ],
+        "UTC-05:00": [
+          {
+            "alpha2Code": "CO",
+            "alpha3Code": "COL",
+            "altSpellings": [
+              "CO",
+              "Republic of Colombia",
+              "República de Colombia"
+            ],
+            ...
+          }
+        ]
+      }
+    */
+  });
+```
+
+### getCountriesByTimezone
+
+Returns a list of countries that belong to a timezone:
+
+```javascript
+restCountries.getCountriesByTimezone('UTC-05:00')
+  .then(response => {
+    /*
+      {
         "UTC-05:00": [
           {
             "alpha2Code": "CO",

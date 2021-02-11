@@ -486,3 +486,33 @@ describe('getAllGroupedByTimezone()', () => {
     });
   });
 });
+
+describe('getCountriesByTimezone()', () => {
+
+  let getAllResponse = require('./mock/get-all-response');
+  beforeEach(() => {
+    nock('https://restcountries.eu')
+      .get('/rest/v2/all')
+      .reply(200, getAllResponse);
+  });
+
+  describe('querying using a valid timezone as a parameter', () => {
+    it('returns an array containing "Colombia" country when querying by timezone "UTC-05:00"', () => {
+      rc.getCountriesByTimezone('UTC-05:00')
+        .then(response => {
+          expect(Object.keys(response)).to.equal('UTC-05:00');
+          expect(response["UTC-05:00"]).to.be.an('array');
+          expect(response["UTC-05:00"].length).to.equal(1);
+          expect(response["UTC-05:00"][0].name).to.equal("Colombia");
+      });
+    });
+  });
+  describe('querying using a timezone that does not exist as a parameter', () => {
+    it('returns an empty array for this given timezone used as parameter', () => {
+      rc.getCountriesByTimezone('xxxx')
+        .then(response => {
+          expect(response["xxxx"]).to.be.an('array').that.is.empty;
+      });
+    });
+  });
+});
