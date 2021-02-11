@@ -344,7 +344,7 @@ restCountries.getAllGroupedBySubRegion()
   });
 ```
 
-### getAllGroupedBySubRegion
+### getAllGroupedByRegion
 
 Returns a list of countries grouped by regions:
 
