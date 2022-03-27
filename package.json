@@ -1,6 +1,7 @@
 {
   "name": "rest-countries-node",
   "version": "1.2.0",
+  "repository":"https://github.com/fegoa89/rest-countries-node",
   "description": "A Node.js wrapper library around the API provided by http://restcountries.eu",
   "main": "index.js",
   "scripts": {
