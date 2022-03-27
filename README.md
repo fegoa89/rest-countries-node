@@ -1,8 +1,12 @@
 [![Build Status](https://semaphoreci.com/api/v1/fegoa89/rest-countries-node/branches/master/badge.svg)](https://semaphoreci.com/fegoa89/rest-countries-node)
 [![npm version](https://badge.fury.io/js/rest-countries-node.svg)](https://badge.fury.io/js/rest-countries-node)
 # Rest Country Node
-A Node.js wrapper library around the API provided by https://restcountries.eu . Since restcountries.eu is not available, I am using a local file to emulate the API request that the wrapper used to perform.
-Hopefully restcountries.eu will be back soon.
+
+> Since restcountries.eu is not available, I am using a local file to emulate the API request that the wrapper used to perform.
+> 
+> Hopefully restcountries.eu will be back soon.
+
+A Node.js wrapper library around the API provided by https://restcountries.eu.
 
 ## Available methods
 [`getAll()`](#getAll)
