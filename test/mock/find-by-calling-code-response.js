@@ -1,67 +1,195 @@
 module.exports = [
   {
-    "alpha2Code": "MC",
-    "alpha3Code": "MCO",
+    "name": {
+      "common": "Monaco",
+      "official": "Principality of Monaco",
+      "nativeName": {
+        "fra": {
+          "official": "Principauté de Monaco",
+          "common": "Monaco"
+        }
+      }
+    },
+    "tld": [
+      ".mc"
+    ],
+    "cca2": "MC",
+    "ccn3": "492",
+    "cca3": "MCO",
+    "cioc": "MON",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "idd": {
+      "root": "+3",
+      "suffixes": [
+        "77"
+      ]
+    },
+    "capital": [
+      "Monaco"
+    ],
     "altSpellings": [
       "MC",
       "Principality of Monaco",
       "Principauté de Monaco"
     ],
-    "area": 2.02,
-    "borders": [
-      "FRA"
-    ],
-    "callingCodes": [
-      "377"
-    ],
-    "capital": "Monaco",
-    "cioc": "MON",
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": {
+      "fra": "French"
+    },
+    "translations": {
+      "ara": {
+        "official": "إمارة موناكو",
+        "common": "موناكو"
+      },
+      "ces": {
+        "official": "Monacké knížectví",
+        "common": "Monako"
+      },
+      "cym": {
+        "official": "Principality of Monaco",
+        "common": "Monaco"
+      },
+      "deu": {
+        "official": "Fürstentum Monaco",
+        "common": "Monaco"
+      },
+      "est": {
+        "official": "Monaco Vürstiriik",
+        "common": "Monaco"
+      },
+      "fin": {
+        "official": "Monacon ruhtinaskunta",
+        "common": "Monaco"
+      },
+      "fra": {
+        "official": "Principauté de Monaco",
+        "common": "Monaco"
+      },
+      "hrv": {
+        "official": "Kneževina Monako",
+        "common": "Monako"
+      },
+      "hun": {
+        "official": "Monacói Hercegség",
+        "common": "Monaco"
+      },
+      "ita": {
+        "official": "Principato di Monaco",
+        "common": "Principato di Monaco"
+      },
+      "jpn": {
+        "official": "モナコ公国",
+        "common": "モナコ"
+      },
+      "kor": {
+        "official": "모나코 공국",
+        "common": "모나코"
+      },
+      "nld": {
+        "official": "Vorstendom Monaco",
+        "common": "Monaco"
+      },
+      "per": {
+        "official": "شاهزاده‌نشین موناکو",
+        "common": "موناکو"
+      },
+      "pol": {
+        "official": "Księstwo Monako",
+        "common": "Monako"
+      },
+      "por": {
+        "official": "Principado do Mónaco",
+        "common": "Mónaco"
+      },
+      "rus": {
+        "official": "Княжество Монако",
+        "common": "Монако"
+      },
+      "slk": {
+        "official": "Monacké kniežatstvo",
+        "common": "Monako"
+      },
+      "spa": {
+        "official": "Principado de Mónaco",
+        "common": "Mónaco"
+      },
+      "swe": {
+        "official": "Furstendömet Monaco",
+        "common": "Monaco"
+      },
+      "urd": {
+        "official": "جمہوریہ مناکو",
+        "common": "موناکو"
+      },
+      "zho": {
+        "official": "摩纳哥公国",
+        "common": "摩纳哥"
       }
-    ],
-    "demonym": "Monegasque",
-    "flag": "https://restcountries.eu/data/mco.svg",
-    "gini": null,
-    "languages": [
-      {
-        "iso639_1": "fr",
-        "iso639_2": "fra",
-        "name": "French",
-        "nativeName": "français"
-      }
-    ],
+    },
     "latlng": [
       43.73333333,
       7.4
     ],
-    "name": "Monaco",
-    "nativeName": "Monaco",
-    "numericCode": "492",
-    "population": 38400,
-    "region": "Europe",
-    "regionalBlocs": [],
-    "subregion": "Western Europe",
+    "landlocked": false,
+    "borders": [
+      "FRA"
+    ],
+    "area": 2.02,
+    "demonyms": {
+      "eng": {
+        "f": "Monegasque",
+        "m": "Monegasque"
+      },
+      "fra": {
+        "f": "Monégasque",
+        "m": "Monégasque"
+      }
+    },
+    "flag": "🇲🇨",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/DGpndDot28bYdXYn7",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1124039"
+    },
+    "population": 39244,
+    "car": {
+      "signs": [
+        "MC"
+      ],
+      "side": "right"
+    },
     "timezones": [
       "UTC+01:00"
     ],
-    "topLevelDomain": [
-      ".mc"
+    "continents": [
+      "Europe"
     ],
-    "translations": {
-      "br": "Mônaco",
-      "de": "Monaco",
-      "es": "Mónaco",
-      "fa": "موناکو",
-      "fr": "Monaco",
-      "hr": "Monako",
-      "it": "Principato di Monaco",
-      "ja": "モナコ",
-      "nl": "Monaco",
-      "pt": "Mónaco"
+    "flags": {
+      "png": "https://flagcdn.com/w320/mc.png",
+      "svg": "https://flagcdn.com/mc.svg"
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/mc.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/mc.svg"
+    },
+    "startOfWeek": "monday",
+    "capitalInfo": {
+      "latlng": [
+        43.73,
+        7.42
+      ]
+    },
+    "postalCode": {
+      "format": "#####",
+      "regex": "^(\\d{5})$"
     }
   }
 ];

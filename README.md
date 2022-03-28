@@ -2,11 +2,7 @@
 [![npm version](https://badge.fury.io/js/rest-countries-node.svg)](https://badge.fury.io/js/rest-countries-node)
 # Rest Country Node
 
-> Since restcountries.eu is not available, I am using a local file to emulate the API request that the wrapper used to perform.
-> 
-> Hopefully restcountries.eu will be back soon.
-
-A Node.js wrapper library around the API provided by https://restcountries.eu.
+A Node.js wrapper library around the API provided by https://restcountries.com. Using API version 3.1.
 
 ## Available methods
 [`getAll()`](#getAll)
@@ -204,7 +200,7 @@ restCountries.findByCurrency('pln')
 Search by ISO 639-1 language code:
 
 ```javascript
-restCountries.findByLanguageCode('it')
+restCountries.findByLanguageCode('italian')
   .then(response => {
     /*
       [
@@ -408,7 +404,7 @@ restCountries.findCountryFlagByCountryName('Spain')
     /*
       {
         "countryName": "Spain",
-        "flag": "https://restcountries.eu/data/esp.svg"
+        "flag": "https://restcountries.com/data/esp.svg"
       }
     */
   });
@@ -463,7 +459,7 @@ restCountries.getNearestCountryToPosition({lat: 50.0, lon: 9.0})
 Returns a list of countries grouped by timezone:
 
 ```javascript
-restCountries.getAllGroupedByRegion()
+restCountries.getAllGroupedByTimezone()
   .then(response => {
     /*
       {

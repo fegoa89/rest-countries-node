@@ -10,8 +10,8 @@ describe('getAll()', () => {
   let getAllResponse = require('./mock/get-all-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -39,8 +39,8 @@ describe('findByName()', () => {
   let findByNameResponse = require('./mock/find-by-name-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/name/france')
+    nock('https://restcountries.com')
+      .get('/v3.1/name/france')
       .reply(200, findByNameResponse);
   });
 
@@ -65,8 +65,8 @@ describe('findByFullName()', () => {
   let findByFullNameResponse = require('./mock/find-by-name-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/name/france?fullText=true')
+    nock('https://restcountries.com')
+      .get('/v3.1/name/france?fullText=true')
       .reply(200, findByFullNameResponse);
   });
 
@@ -91,8 +91,8 @@ describe('findByIsoCountryCode()', () => {
   let findByIsoCountryCodeResponse = require('./mock/find-by-iso-country-code-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/alpha/bg')
+    nock('https://restcountries.com')
+      .get('/v3.1/alpha/bg')
       .reply(200, findByIsoCountryCodeResponse);
   });
 
@@ -109,8 +109,8 @@ describe('findByIsoCountryCodes()', () => {
   let findByIsoCountryCodesResponse = require('./mock/find-by-iso-country-codes-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/alpha?codes=pl;gb;it')
+    nock('https://restcountries.com')
+      .get('/v3.1/alpha?codes=pl;gb;it')
       .reply(200, findByIsoCountryCodesResponse);
   });
 
@@ -127,8 +127,8 @@ describe('findByCurrency()', () => {
   let findByIsoCurrencyResponse = require('./mock/find-by-currency-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/currency/pln')
+    nock('https://restcountries.com')
+      .get('/v3.1/currency/pln')
       .reply(200, findByIsoCurrencyResponse);
   });
 
@@ -148,25 +148,25 @@ describe('findByCurrency()', () => {
   });
 });
 
-describe('findByLanguageCode()', () => {
+describe('findByLanguageName()', () => {
 
-  let findByLanguageCodeResponse = require('./mock/find-by-language-code-response');
+  let findByLanguageNameResponse = require('./mock/find-by-language-code-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/lang/it')
-      .reply(200, findByLanguageCodeResponse);
+    nock('https://restcountries.com')
+      .get('/v3.1/lang/italian')
+      .reply(200, findByLanguageNameResponse);
   });
 
   it('returns an array', () => {
-    rc.findByLanguageCode('it')
+    rc.findByLanguageName('italian')
       .then(response => {
         expect(response).to.be.an('array');
       });
   });
 
   it('returns one element of type object inside the response', () => {
-    rc.findByLanguageCode('it')
+    rc.findByLanguageName('italian')
       .then(response => {
         expect(response[0]).to.be.an('object');
       });
@@ -178,8 +178,8 @@ describe('findByCapitalCity()', () => {
   let findByCapitalCityResponse = require('./mock/find-by-capital-city-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/capital/tallinn')
+    nock('https://restcountries.com')
+      .get('/v3.1/capital/tallinn')
       .reply(200, findByCapitalCityResponse);
   });
 
@@ -203,8 +203,8 @@ describe('findByCallingCode()', () => {
   let findByCapitalCityResponse = require('./mock/find-by-capital-city-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/callingcode/377')
+    nock('https://restcountries.com')
+      .get('/v2/callingcode/377')
       .reply(200, findByCapitalCityResponse);
   });
 
@@ -225,11 +225,11 @@ describe('findByCallingCode()', () => {
 
 describe('findByRegion()', () => {
 
-  let findByRegionResponse = require('./mock/find-by-capital-city-response');
+  let findByRegionResponse = require('./mock/find-by-region-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/region/oceania')
+    nock('https://restcountries.com')
+      .get('/v3.1/region/oceania')
       .reply(200, findByRegionResponse);
   });
 
@@ -252,8 +252,8 @@ describe('getAllGroupedBySubRegion()', () => {
 
   let getAllResponse = require('./mock/get-all-response');
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -297,8 +297,8 @@ describe('getAllGroupedByRegion()', () => {
 
   let getAllResponse = require('./mock/get-all-response');
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -343,8 +343,8 @@ describe('findCountryFlagByCountryName()', () => {
   let getAllResponse = require('./mock/get-all-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -379,8 +379,8 @@ describe('findCountryByForeignName()', () => {
   let getAllResponse = require('./mock/get-all-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -415,8 +415,8 @@ describe('getNearestCountryToPosition()', () => {
   let getAllResponse = require('./mock/get-all-response');
 
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -439,8 +439,8 @@ describe('getAllGroupedByTimezone()', () => {
 
   let getAllResponse = require('./mock/get-all-response');
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 
@@ -491,8 +491,8 @@ describe('getCountriesByTimezone()', () => {
 
   let getAllResponse = require('./mock/get-all-response');
   beforeEach(() => {
-    nock('https://restcountries.eu')
-      .get('/rest/v2/all')
+    nock('https://restcountries.com')
+      .get('/v3.1/all')
       .reply(200, getAllResponse);
   });
 

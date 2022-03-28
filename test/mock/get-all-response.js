@@ -1,13 +1,145 @@
 module.exports = [
   {
-    "alpha2Code": "ES",
-    "alpha3Code": "ESP",
+    "name": {
+      "common": "Spain",
+      "official": "Kingdom of Spain",
+      "nativeName": {
+        "spa": {
+          "official": "Reino de España",
+          "common": "España"
+        }
+      }
+    },
+    "tld": [
+      ".es"
+    ],
+    "cca2": "ES",
+    "ccn3": "724",
+    "cca3": "ESP",
+    "cioc": "ESP",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "idd": {
+      "root": "+3",
+      "suffixes": [
+        "4"
+      ]
+    },
+    "capital": [
+      "Madrid"
+    ],
     "altSpellings": [
       "ES",
       "Kingdom of Spain",
       "Reino de España"
     ],
-    "area": 505992.0,
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": {
+      "spa": "Spanish"
+    },
+    "translations": {
+      "ara": {
+        "official": "مملكة إسبانيا",
+        "common": "إسبانيا"
+      },
+      "ces": {
+        "official": "Španělské království",
+        "common": "Španělsko"
+      },
+      "cym": {
+        "official": "Kingdom of Spain",
+        "common": "Spain"
+      },
+      "deu": {
+        "official": "Königreich Spanien",
+        "common": "Spanien"
+      },
+      "est": {
+        "official": "Hispaania Kuningriik",
+        "common": "Hispaania"
+      },
+      "fin": {
+        "official": "Espanjan kuningaskunta",
+        "common": "Espanja"
+      },
+      "fra": {
+        "official": "Royaume d'Espagne",
+        "common": "Espagne"
+      },
+      "hrv": {
+        "official": "Kraljevina Španjolska",
+        "common": "Španjolska"
+      },
+      "hun": {
+        "official": "Spanyol Királyság",
+        "common": "Spanyolország"
+      },
+      "ita": {
+        "official": "Regno di Spagna",
+        "common": "Spagna"
+      },
+      "jpn": {
+        "official": "スペイン王国",
+        "common": "スペイン"
+      },
+      "kor": {
+        "official": "에스파냐 왕국",
+        "common": "스페인"
+      },
+      "nld": {
+        "official": "Koninkrijk Spanje",
+        "common": "Spanje"
+      },
+      "per": {
+        "official": "پادشاهی اسپانیا",
+        "common": "اسپانیا"
+      },
+      "pol": {
+        "official": "Królestwo Hiszpanii ",
+        "common": "Hiszpania"
+      },
+      "por": {
+        "official": "Reino de Espanha",
+        "common": "Espanha"
+      },
+      "rus": {
+        "official": "Королевство Испания",
+        "common": "Испания"
+      },
+      "slk": {
+        "official": "Španielske kráľovstvo",
+        "common": "Španielsko"
+      },
+      "spa": {
+        "official": "Reino de España",
+        "common": "España"
+      },
+      "swe": {
+        "official": "Konungariket Spanien",
+        "common": "Spanien"
+      },
+      "urd": {
+        "official": "مملکتِ ہسپانیہ",
+        "common": "ہسپانیہ"
+      },
+      "zho": {
+        "official": "西班牙王国",
+        "common": "西班牙"
+      }
+    },
+    "latlng": [
+      40,
+      -4
+    ],
+    "landlocked": false,
     "borders": [
       "AND",
       "FRA",
@@ -15,156 +147,201 @@ module.exports = [
       "PRT",
       "MAR"
     ],
-    "callingCodes": [
-      "34"
-    ],
-    "capital": "Madrid",
-    "cioc": "ESP",
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
+    "area": 505992,
+    "demonyms": {
+      "eng": {
+        "f": "Spanish",
+        "m": "Spanish"
+      },
+      "fra": {
+        "f": "Espagnole",
+        "m": "Espagnol"
       }
-    ],
-    "demonym": "Spanish",
-    "flag": "https://restcountries.eu/data/esp.svg",
-    "gini": 34.7,
-    "languages": [
-      {
-        "iso639_1": "es",
-        "iso639_2": "spa",
-        "name": "Spanish",
-        "nativeName": "Español"
-      }
-    ],
-    "latlng": [
-      40.0,
-      -4.0
-    ],
-    "name": "Spain",
-    "nativeName": "España",
-    "numericCode": "724",
-    "population": 46438422,
-    "region": "Europe",
-    "regionalBlocs": [
-      {
-        "acronym": "EU",
-        "name": "European Union",
-        "otherAcronyms": [],
-        "otherNames": []
-      }
-    ],
-    "subregion": "Southern Europe",
+    },
+    "flag": "🇪🇸",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/138JaXW8EZzRVitY9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1311341"
+    },
+    "population": 47351567,
+    "gini": {
+      "2018": 34.7
+    },
+    "fifa": "ESP",
+    "car": {
+      "signs": [
+        "E"
+      ],
+      "side": "right"
+    },
     "timezones": [
       "UTC",
       "UTC+01:00"
     ],
-    "topLevelDomain": [
-      ".es"
+    "continents": [
+      "Europe"
     ],
-    "translations": {
-      "br": "Espanha",
-      "de": "Spanien",
-      "es": "España",
-      "fa": "اسپانیا",
-      "fr": "Espagne",
-      "hr": "Španjolska",
-      "it": "Spagna",
-      "ja": "スペイン",
-      "nl": "Spanje",
-      "pt": "Espanha"
+    "flags": {
+      "png": "https://flagcdn.com/w320/es.png",
+      "svg": "https://flagcdn.com/es.svg"
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/es.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/es.svg"
+    },
+    "startOfWeek": "monday",
+    "capitalInfo": {
+      "latlng": [
+        40.4,
+        -3.68
+      ]
+    },
+    "postalCode": {
+      "format": "#####",
+      "regex": "^(\\d{5})$"
     }
   },
   {
-    "alpha2Code": "DE",
-    "alpha3Code": "DEU",
-    "altSpellings": [
-      "DE",
-      "Federal Republic of Germany",
-      "Bundesrepublik Deutschland"
-    ],
-    "area": 357114.0,
-    "borders": [
-      "AUT",
-      "BEL",
-      "CZE",
-      "DNK",
-      "FRA",
-      "LUX",
-      "NLD",
-      "POL",
-      "CHE"
-    ],
-    "callingCodes": [
-      "49"
-    ],
-    "capital": "Berlin",
-    "cioc": "GER",
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
+    "name": {
+      "common": "Colombia",
+      "official": "Republic of Colombia",
+      "nativeName": {
+        "spa": {
+          "official": "República de Colombia",
+          "common": "Colombia"
+        }
       }
+    },
+    "tld": [
+      ".co"
     ],
-    "demonym": "German",
-    "flag": "https://restcountries.eu/data/deu.svg",
-    "gini": 28.3,
-    "languages": [
-      {
-        "iso639_1": "de",
-        "iso639_2": "deu",
-        "name": "German",
-        "nativeName": "Deutsch"
+    "cca2": "CO",
+    "ccn3": "170",
+    "cca3": "COL",
+    "cioc": "COL",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "COP": {
+        "name": "Colombian peso",
+        "symbol": "$"
       }
+    },
+    "idd": {
+      "root": "+5",
+      "suffixes": [
+        "7"
+      ]
+    },
+    "capital": [
+      "Bogotá"
     ],
-    "latlng": [
-      51.0,
-      9.0
-    ],
-    "name": "Germany",
-    "nativeName": "Deutschland",
-    "numericCode": "276",
-    "population": 81770900,
-    "region": "Europe",
-    "regionalBlocs": [
-      {
-        "acronym": "EU",
-        "name": "European Union",
-        "otherAcronyms": [],
-        "otherNames": []
-      }
-    ],
-    "subregion": "Western Europe",
-    "timezones": [
-      "UTC+01:00"
-    ],
-    "topLevelDomain": [
-      ".de"
-    ],
-    "translations": {
-      "br": "Alemanha",
-      "de": "Deutschland",
-      "es": "Alemania",
-      "fa": "آلمان",
-      "fr": "Allemagne",
-      "hr": "Njemačka",
-      "it": "Germania",
-      "ja": "ドイツ",
-      "nl": "Duitsland",
-      "pt": "Alemanha"
-    }
-  },
-  {
-    "alpha2Code": "CO",
-    "alpha3Code": "COL",
     "altSpellings": [
       "CO",
       "Republic of Colombia",
       "República de Colombia"
     ],
-    "area": 1141748.0,
+    "region": "Americas",
+    "subregion": "South America",
+    "languages": {
+      "spa": "Spanish"
+    },
+    "translations": {
+      "ara": {
+        "official": "جمهورية كولومبيا",
+        "common": "كولومبيا"
+      },
+      "ces": {
+        "official": "Kolumbijská republika",
+        "common": "Kolumbie"
+      },
+      "cym": {
+        "official": "Gweriniaeth Colombia",
+        "common": "Colombia"
+      },
+      "deu": {
+        "official": "Republik Kolumbien",
+        "common": "Kolumbien"
+      },
+      "est": {
+        "official": "Colombia Vabariik",
+        "common": "Colombia"
+      },
+      "fin": {
+        "official": "Kolumbian tasavalta",
+        "common": "Kolumbia"
+      },
+      "fra": {
+        "official": "République de Colombie",
+        "common": "Colombie"
+      },
+      "hrv": {
+        "official": "Republika Kolumbija",
+        "common": "Kolumbija"
+      },
+      "hun": {
+        "official": "Kolumbiai Köztársaság",
+        "common": "Kolumbia"
+      },
+      "ita": {
+        "official": "Repubblica di Colombia",
+        "common": "Colombia"
+      },
+      "jpn": {
+        "official": "コロンビア共和国",
+        "common": "コロンビア"
+      },
+      "kor": {
+        "official": "콜롬비아 공화국",
+        "common": "콜롬비아"
+      },
+      "nld": {
+        "official": "Republiek Colombia",
+        "common": "Colombia"
+      },
+      "per": {
+        "official": "جمهوری کلمبیا",
+        "common": "کلمبیا"
+      },
+      "pol": {
+        "official": "Republika Kolumbii",
+        "common": "Kolumbia"
+      },
+      "por": {
+        "official": "República da Colômbia",
+        "common": "Colômbia"
+      },
+      "rus": {
+        "official": "Республика Колумбия",
+        "common": "Колумбия"
+      },
+      "slk": {
+        "official": "Kolumbijská republika",
+        "common": "Kolumbia"
+      },
+      "spa": {
+        "official": "República de Colombia",
+        "common": "Colombia"
+      },
+      "swe": {
+        "official": "Republiken Colombia",
+        "common": "Colombia"
+      },
+      "urd": {
+        "official": "جمہوریہ کولمبیا",
+        "common": "کولمبیا"
+      },
+      "zho": {
+        "official": "哥伦比亚共和国",
+        "common": "哥伦比亚"
+      }
+    },
+    "latlng": [
+      4,
+      -72
+    ],
+    "landlocked": false,
     "borders": [
       "BRA",
       "ECU",
@@ -172,81 +349,53 @@ module.exports = [
       "PER",
       "VEN"
     ],
-    "callingCodes": [
-      "57"
-    ],
-    "capital": "Bogotá",
-    "cioc": "COL",
-    "currencies": [
-      {
-        "code": "COP",
-        "name": "Colombian peso",
-        "symbol": "$"
-      }
-    ],
-    "demonym": "Colombian",
-    "flag": "https://restcountries.eu/data/col.svg",
-    "gini": 55.9,
-    "languages": [
-      {
-        "iso639_1": "es",
-        "iso639_2": "spa",
-        "name": "Spanish",
-        "nativeName": "Español"
-      }
-    ],
-    "latlng": [
-      4.0,
-      -72.0
-    ],
-    "name": "Colombia",
-    "nativeName": "Colombia",
-    "numericCode": "170",
-    "population": 48759958,
-    "region": "Americas",
-    "regionalBlocs": [
-      {
-        "acronym": "PA",
-        "name": "Pacific Alliance",
-        "otherAcronyms": [],
-        "otherNames": [
-          "Alianza del Pacífico"
-        ]
+    "area": 1141748,
+    "demonyms": {
+      "eng": {
+        "f": "Colombian",
+        "m": "Colombian"
       },
-      {
-        "acronym": "USAN",
-        "name": "Union of South American Nations",
-        "otherAcronyms": [
-          "UNASUR",
-          "UNASUL",
-          "UZAN"
-        ],
-        "otherNames": [
-          "Unión de Naciones Suramericanas",
-          "União de Nações Sul-Americanas",
-          "Unie van Zuid-Amerikaanse Naties",
-          "South American Union"
-        ]
+      "fra": {
+        "f": "Colombienne",
+        "m": "Colombien"
       }
-    ],
-    "subregion": "South America",
+    },
+    "flag": "🇨🇴",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/RdwTG8e7gPwS62oR6",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/120027"
+    },
+    "population": 50882884,
+    "gini": {
+      "2019": 51.3
+    },
+    "fifa": "COL",
+    "car": {
+      "signs": [
+        "CO"
+      ],
+      "side": "right"
+    },
     "timezones": [
       "UTC-05:00"
     ],
-    "topLevelDomain": [
-      ".co"
+    "continents": [
+      "South America"
     ],
-    "translations": {
-      "br": "Colômbia",
-      "de": "Kolumbien",
-      "es": "Colombia",
-      "fa": "کلمبیا",
-      "fr": "Colombie",
-      "hr": "Kolumbija",
-      "it": "Colombia",
-      "ja": "コロンビア",
-      "nl": "Colombia",
-      "pt": "Colômbia"
+    "flags": {
+      "png": "https://flagcdn.com/w320/co.png",
+      "svg": "https://flagcdn.com/co.svg"
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/co.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/co.svg"
+    },
+    "startOfWeek": "monday",
+    "capitalInfo": {
+      "latlng": [
+        4.71,
+        -74.07
+      ]
     }
   }
 ];

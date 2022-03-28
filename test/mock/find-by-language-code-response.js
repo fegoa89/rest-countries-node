@@ -1,318 +1,197 @@
 module.exports = [
   {
-    "alpha2Code": "VA",
-    "alpha3Code": "VAT",
-    "altSpellings": [
-      "Sancta Sedes",
-      "Vatican",
-      "The Vatican"
+    "name": {
+      "common": "Vatican City",
+      "official": "Vatican City State",
+      "nativeName": {
+        "ita": {
+          "official": "Stato della Città del Vaticano",
+          "common": "Vaticano"
+        },
+        "lat": {
+          "official": "Status Civitatis Vaticanæ",
+          "common": "Vaticanæ"
+        }
+      }
+    },
+    "tld": [
+      ".va"
     ],
-    "area": 0.44,
-    "borders": [
-      "ITA"
-    ],
-    "callingCodes": [
-      "379"
-    ],
-    "capital": "Rome",
-    "cioc": "",
-    "currencies": [
-      {
-        "code": "EUR",
+    "cca2": "VA",
+    "ccn3": "336",
+    "cca3": "VAT",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "EUR": {
         "name": "Euro",
         "symbol": "€"
       }
+    },
+    "idd": {
+      "root": "+3",
+      "suffixes": [
+        "906698",
+        "79"
+      ]
+    },
+    "capital": [
+      "Vatican City"
     ],
-    "demonym": "",
-    "flag": "https://restcountries.eu/data/vat.svg",
-    "gini": null,
-    "languages": [
-      {
-        "iso639_1": "la",
-        "iso639_2": "lat",
-        "name": "Latin",
-        "nativeName": "latine"
+    "altSpellings": [
+      "VA",
+      "Holy See (Vatican City State)",
+      "Vatican City State",
+      "Stato della Città del Vaticano"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": {
+      "ita": "Italian",
+      "lat": "Latin"
+    },
+    "translations": {
+      "ara": {
+        "official": "دولة مدينة الفاتيكان",
+        "common": "مدينة الفاتيكان"
       },
-      {
-        "iso639_1": "it",
-        "iso639_2": "ita",
-        "name": "Italian",
-        "nativeName": "Italiano"
+      "ces": {
+        "official": "Městský stát Vatikán",
+        "common": "Vatikán"
       },
-      {
-        "iso639_1": "fr",
-        "iso639_2": "fra",
-        "name": "French",
-        "nativeName": "français"
+      "cym": {
+        "official": "Vatican City State",
+        "common": "Vatican City"
       },
-      {
-        "iso639_1": "de",
-        "iso639_2": "deu",
-        "name": "German",
-        "nativeName": "Deutsch"
+      "deu": {
+        "official": "Staat Vatikanstadt",
+        "common": "Vatikanstadt"
+      },
+      "est": {
+        "official": "Vatikani Linnriik",
+        "common": "Vatikan"
+      },
+      "fin": {
+        "official": "Vatikaanin kaupunkivaltio",
+        "common": "Vatikaani"
+      },
+      "fra": {
+        "official": "Cité du Vatican",
+        "common": "Cité du Vatican"
+      },
+      "hrv": {
+        "official": "Vatikan",
+        "common": "Vatikan"
+      },
+      "hun": {
+        "official": "Vatikán Állam",
+        "common": "Vatikán"
+      },
+      "ita": {
+        "official": "Città del Vaticano",
+        "common": "Città del Vaticano"
+      },
+      "jpn": {
+        "official": "バチカン市国の状態",
+        "common": "バチカン市国"
+      },
+      "kor": {
+        "official": "바티칸 시국",
+        "common": "바티칸"
+      },
+      "nld": {
+        "official": "Vaticaanstad",
+        "common": "Vaticaanstad"
+      },
+      "per": {
+        "official": "دولت‌شهر واتیکان",
+        "common": "واتیکان"
+      },
+      "pol": {
+        "official": "Państwo Watykańskie",
+        "common": "Watykan"
+      },
+      "por": {
+        "official": "Cidade do Vaticano",
+        "common": "Cidade do Vaticano"
+      },
+      "rus": {
+        "official": "Город-государство Ватикан",
+        "common": "Ватикан"
+      },
+      "slk": {
+        "official": "Svätá stolica (Vatikánsky mestský štát",
+        "common": "Vatikán"
+      },
+      "spa": {
+        "official": "Ciudad del Vaticano",
+        "common": "Ciudad del Vaticano"
+      },
+      "swe": {
+        "official": "Vatikanstaten",
+        "common": "Vatikanstaten"
+      },
+      "urd": {
+        "official": "ویٹیکن سٹی",
+        "common": "ویٹیکن سٹی"
+      },
+      "zho": {
+        "official": "梵蒂冈城国",
+        "common": "梵蒂冈"
       }
-    ],
+    },
     "latlng": [
       41.9,
       12.45
     ],
-    "name": "Holy See",
-    "nativeName": "Sancta Sedes",
-    "numericCode": "336",
-    "population": 451,
-    "region": "Europe",
-    "regionalBlocs": [],
-    "subregion": "Southern Europe",
-    "timezones": [
-      "UTC+01:00"
-    ],
-    "topLevelDomain": [
-      ".va"
-    ],
-    "translations": {
-      "br": "Vaticano",
-      "de": "Heiliger Stuhl",
-      "es": "Santa Sede",
-      "fa": "سریر مقدس",
-      "fr": "voir Saint",
-      "hr": "Sveta Stolica",
-      "it": "Santa Sede",
-      "ja": "聖座",
-      "nl": "Heilige Stoel",
-      "pt": "Vaticano"
-    }
-  },
-  {
-    "alpha2Code": "IT",
-    "alpha3Code": "ITA",
-    "altSpellings": [
-      "IT",
-      "Italian Republic",
-      "Repubblica italiana"
-    ],
-    "area": 301336.0,
-    "borders": [
-      "AUT",
-      "FRA",
-      "SMR",
-      "SVN",
-      "CHE",
-      "VAT"
-    ],
-    "callingCodes": [
-      "39"
-    ],
-    "capital": "Rome",
-    "cioc": "ITA",
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
-      }
-    ],
-    "demonym": "Italian",
-    "flag": "https://restcountries.eu/data/ita.svg",
-    "gini": 36.0,
-    "languages": [
-      {
-        "iso639_1": "it",
-        "iso639_2": "ita",
-        "name": "Italian",
-        "nativeName": "Italiano"
-      }
-    ],
-    "latlng": [
-      42.83333333,
-      12.83333333
-    ],
-    "name": "Italy",
-    "nativeName": "Italia",
-    "numericCode": "380",
-    "population": 60665551,
-    "region": "Europe",
-    "regionalBlocs": [
-      {
-        "acronym": "EU",
-        "name": "European Union",
-        "otherAcronyms": [],
-        "otherNames": []
-      }
-    ],
-    "subregion": "Southern Europe",
-    "timezones": [
-      "UTC+01:00"
-    ],
-    "topLevelDomain": [
-      ".it"
-    ],
-    "translations": {
-      "br": "Itália",
-      "de": "Italien",
-      "es": "Italia",
-      "fa": "ایتالیا",
-      "fr": "Italie",
-      "hr": "Italija",
-      "it": "Italia",
-      "ja": "イタリア",
-      "nl": "Italië",
-      "pt": "Itália"
-    }
-  },
-  {
-    "alpha2Code": "SM",
-    "alpha3Code": "SMR",
-    "altSpellings": [
-      "SM",
-      "Republic of San Marino",
-      "Repubblica di San Marino"
-    ],
-    "area": 61.0,
+    "landlocked": true,
     "borders": [
       "ITA"
     ],
-    "callingCodes": [
-      "378"
-    ],
-    "capital": "City of San Marino",
-    "cioc": "SMR",
-    "currencies": [
-      {
-        "code": "EUR",
-        "name": "Euro",
-        "symbol": "€"
+    "area": 0.44,
+    "demonyms": {
+      "eng": {
+        "f": "Vatican",
+        "m": "Vatican"
+      },
+      "fra": {
+        "f": "Vaticane",
+        "m": "Vatican"
       }
-    ],
-    "demonym": "Sammarinese",
-    "flag": "https://restcountries.eu/data/smr.svg",
-    "gini": null,
-    "languages": [
-      {
-        "iso639_1": "it",
-        "iso639_2": "ita",
-        "name": "Italian",
-        "nativeName": "Italiano"
-      }
-    ],
-    "latlng": [
-      43.76666666,
-      12.41666666
-    ],
-    "name": "San Marino",
-    "nativeName": "San Marino",
-    "numericCode": "674",
-    "population": 33005,
-    "region": "Europe",
-    "regionalBlocs": [],
-    "subregion": "Southern Europe",
+    },
+    "flag": "🇻🇦",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/DTKvw5Bd1QZaDZmE8",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/36989"
+    },
+    "population": 451,
+    "car": {
+      "signs": [
+        "V"
+      ],
+      "side": "right"
+    },
     "timezones": [
       "UTC+01:00"
     ],
-    "topLevelDomain": [
-      ".sm"
+    "continents": [
+      "Europe"
     ],
-    "translations": {
-      "br": "San Marino",
-      "de": "San Marino",
-      "es": "San Marino",
-      "fa": "سان مارینو",
-      "fr": "Saint-Marin",
-      "hr": "San Marino",
-      "it": "San Marino",
-      "ja": "サンマリノ",
-      "nl": "San Marino",
-      "pt": "São Marinho"
-    }
-  },
-  {
-    "alpha2Code": "CH",
-    "alpha3Code": "CHE",
-    "altSpellings": [
-      "CH",
-      "Swiss Confederation",
-      "Schweiz",
-      "Suisse",
-      "Svizzera",
-      "Svizra"
-    ],
-    "area": 41284.0,
-    "borders": [
-      "AUT",
-      "FRA",
-      "ITA",
-      "LIE",
-      "DEU"
-    ],
-    "callingCodes": [
-      "41"
-    ],
-    "capital": "Bern",
-    "cioc": "SUI",
-    "currencies": [
-      {
-        "code": "CHF",
-        "name": "Swiss franc",
-        "symbol": "Fr"
-      }
-    ],
-    "demonym": "Swiss",
-    "flag": "https://restcountries.eu/data/che.svg",
-    "gini": 33.7,
-    "languages": [
-      {
-        "iso639_1": "de",
-        "iso639_2": "deu",
-        "name": "German",
-        "nativeName": "Deutsch"
-      },
-      {
-        "iso639_1": "fr",
-        "iso639_2": "fra",
-        "name": "French",
-        "nativeName": "français"
-      },
-      {
-        "iso639_1": "it",
-        "iso639_2": "ita",
-        "name": "Italian",
-        "nativeName": "Italiano"
-      }
-    ],
-    "latlng": [
-      47.0,
-      8.0
-    ],
-    "name": "Switzerland",
-    "nativeName": "Schweiz",
-    "numericCode": "756",
-    "population": 8341600,
-    "region": "Europe",
-    "regionalBlocs": [
-      {
-        "acronym": "EFTA",
-        "name": "European Free Trade Association",
-        "otherAcronyms": [],
-        "otherNames": []
-      }
-    ],
-    "subregion": "Western Europe",
-    "timezones": [
-      "UTC+01:00"
-    ],
-    "topLevelDomain": [
-      ".ch"
-    ],
-    "translations": {
-      "br": "Suíça",
-      "de": "Schweiz",
-      "es": "Suiza",
-      "fa": "سوئیس",
-      "fr": "Suisse",
-      "hr": "Švicarska",
-      "it": "Svizzera",
-      "ja": "スイス",
-      "nl": "Zwitserland",
-      "pt": "Suíça"
+    "flags": {
+      "png": "https://flagcdn.com/w320/va.png",
+      "svg": "https://flagcdn.com/va.svg"
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/va.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/va.svg"
+    },
+    "startOfWeek": "monday",
+    "capitalInfo": {
+      "latlng": [
+        41.9,
+        12.45
+      ]
     }
   }
 ];

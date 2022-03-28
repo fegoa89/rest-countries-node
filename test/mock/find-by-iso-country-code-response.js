@@ -1,12 +1,144 @@
 module.exports = {
-  "alpha2Code": "BG",
-  "alpha3Code": "BGR",
+  "name": {
+    "common": "Bulgaria",
+    "official": "Republic of Bulgaria",
+    "nativeName": {
+      "bul": {
+        "official": "Република България",
+        "common": "България"
+      }
+    }
+  },
+  "tld": [
+    ".bg"
+  ],
+  "cca2": "BG",
+  "ccn3": "100",
+  "cca3": "BGR",
+  "cioc": "BUL",
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "currencies": {
+    "BGN": {
+      "name": "Bulgarian lev",
+      "symbol": "лв"
+    }
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "59"
+    ]
+  },
+  "capital": [
+    "Sofia"
+  ],
   "altSpellings": [
     "BG",
     "Republic of Bulgaria",
     "Република България"
   ],
-  "area": 110879.0,
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "languages": {
+    "bul": "Bulgarian"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية بلغاريا",
+      "common": "بلغاريا"
+    },
+    "ces": {
+      "official": "Bulharská republika",
+      "common": "Bulharsko"
+    },
+    "cym": {
+      "official": "Gweriniaeth Bwlgaria",
+      "common": "Bwlgaria"
+    },
+    "deu": {
+      "official": "Republik Bulgarien",
+      "common": "Bulgarien"
+    },
+    "est": {
+      "official": "Bulgaaria Vabariik",
+      "common": "Bulgaaria"
+    },
+    "fin": {
+      "official": "Bulgarian tasavalta",
+      "common": "Bulgaria"
+    },
+    "fra": {
+      "official": "République de Bulgarie",
+      "common": "Bulgarie"
+    },
+    "hrv": {
+      "official": "Republika Bugarska",
+      "common": "Bugarska"
+    },
+    "hun": {
+      "official": "Bolgár Köztársaság",
+      "common": "Bulgária"
+    },
+    "ita": {
+      "official": "Repubblica di Bulgaria",
+      "common": "Bulgaria"
+    },
+    "jpn": {
+      "official": "ブルガリア共和国",
+      "common": "ブルガリア"
+    },
+    "kor": {
+      "official": "불가리아 공화국",
+      "common": "불가리아"
+    },
+    "nld": {
+      "official": "Republiek Bulgarije",
+      "common": "Bulgarije"
+    },
+    "per": {
+      "official": "جمهوری بلغارستان",
+      "common": "بلغارستان"
+    },
+    "pol": {
+      "official": "Republika Bułgarii",
+      "common": "Bułgaria"
+    },
+    "por": {
+      "official": "República da Bulgária",
+      "common": "Bulgária"
+    },
+    "rus": {
+      "official": "Республика Болгария",
+      "common": "Болгария"
+    },
+    "slk": {
+      "official": "Bulharská republika",
+      "common": "Bulharsko"
+    },
+    "spa": {
+      "official": "República de Bulgaria",
+      "common": "Bulgaria"
+    },
+    "swe": {
+      "official": "Republiken Bulgarien",
+      "common": "Bulgarien"
+    },
+    "urd": {
+      "official": "جمہوریہ بلغاریہ",
+      "common": "بلغاریہ"
+    },
+    "zho": {
+      "official": "保加利亚共和国",
+      "common": "保加利亚"
+    }
+  },
+  "latlng": [
+    43,
+    25
+  ],
+  "landlocked": false,
   "borders": [
     "GRC",
     "MKD",
@@ -14,63 +146,56 @@ module.exports = {
     "SRB",
     "TUR"
   ],
-  "callingCodes": [
-    "359"
-  ],
-  "capital": "Sofia",
-  "cioc": "BUL",
-  "currencies": [
-    {
-      "code": "BGN",
-      "name": "Bulgarian lev",
-      "symbol": "лв"
+  "area": 110879,
+  "demonyms": {
+    "eng": {
+      "f": "Bulgarian",
+      "m": "Bulgarian"
+    },
+    "fra": {
+      "f": "Bulgare",
+      "m": "Bulgare"
     }
-  ],
-  "demonym": "Bulgarian",
-  "flag": "https://restcountries.eu/data/bgr.svg",
-  "gini": 28.2,
-  "languages": [
-    {
-      "iso639_1": "bg",
-      "iso639_2": "bul",
-      "name": "Bulgarian",
-      "nativeName": "български език"
-    }
-  ],
-  "latlng": [
-    43.0,
-    25.0
-  ],
-  "name": "Bulgaria",
-  "nativeName": "България",
-  "numericCode": "100",
-  "population": 7153784,
-  "region": "Europe",
-  "regionalBlocs": [
-    {
-      "acronym": "EU",
-      "name": "European Union",
-      "otherAcronyms": [],
-      "otherNames": []
-    }
-  ],
-  "subregion": "Eastern Europe",
+  },
+  "flag": "🇧🇬",
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/F5uAhDGWzc3BrHfm9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/186382"
+  },
+  "population": 6927288,
+  "gini": {
+    "2018": 41.3
+  },
+  "fifa": "BUL",
+  "car": {
+    "signs": [
+      "BG"
+    ],
+    "side": "right"
+  },
   "timezones": [
     "UTC+02:00"
   ],
-  "topLevelDomain": [
-    ".bg"
+  "continents": [
+    "Europe"
   ],
-  "translations": {
-    "br": "Bulgária",
-    "de": "Bulgarien",
-    "es": "Bulgaria",
-    "fa": "بلغارستان",
-    "fr": "Bulgarie",
-    "hr": "Bugarska",
-    "it": "Bulgaria",
-    "ja": "ブルガリア",
-    "nl": "Bulgarije",
-    "pt": "Bulgária"
+  "flags": {
+    "png": "https://flagcdn.com/w320/bg.png",
+    "svg": "https://flagcdn.com/bg.svg"
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/bg.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/bg.svg"
+  },
+  "startOfWeek": "monday",
+  "capitalInfo": {
+    "latlng": [
+      42.68,
+      23.32
+    ]
+  },
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
   }
-};
+}
